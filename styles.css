@@ -1,0 +1,377 @@
+:root{
+
+}
+/* Globales */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* TipoGrafia */
+h1{
+    font-size: 3.8rem;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+h1,h2,h3,h4{
+    text-align: center;
+}
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(0, 102, 255, 0.178) 0%, rgba(122, 235, 255, 0.418) 35%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    padding: 2rem;
+    
+}
+.titulo span{
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .titulo span{
+        font-size: 1.5rem;
+        margin-left: 25rem;
+    }
+}
+
+.nav-bg{
+    background-color: rgba(0, 255, 76, 0.274);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+}
+
+.navegacion-principal a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    padding: 1rem;
+    
+}
+
+a.s:hover {
+    background-image:url(../img/punpun2.jpg) ;
+    background-repeat: none;
+    background-size: 123px 43px;
+    color: rgba(0, 217, 255, 0.842); 
+    
+}
+
+a.c:hover{
+    background-image:url(../img/punpun2.jpg) ;
+    background-repeat: none;
+    background-size: 149px 43px;
+    color: rgba(0, 217, 255, 0.842);  
+}
+
+a.d:hover{
+    background-image:url(../img/punpun2.jpg) ;
+    background-repeat: none;
+    background-size: 123px 43px; 
+    color: rgba(0, 217, 255, 0.842); 
+}
+
+a.m:hover{
+    background-image:url(../img/punpun2.jpg) ;
+    background-repeat: none;
+    background-size: 180px 43px; 
+    color: rgba(0, 217, 255, 0.842); 
+}
+
+.portada{
+    background-image: url(../img/Portada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    position:relative;
+}
+
+.contenido-portada{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-portada h2{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+}
+
+.main h2{
+    background-color: rgba(0, 255, 221, 0.466);
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.iconos{
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 221, 0.466);
+    border-radius: 50%;
+    
+}
+
+/** Shooters **/
+
+.shooters-h h3{
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.shooters-h p{
+    text-align:center;
+    text-justify: auto;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 2rem;
+}
+
+.shooters-h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media (min-width: 768px) {
+    .shooters{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+        justify-content:space-between;
+    }
+}
+
+.shooters p{
+    text-align:center;
+    text-justify: auto;
+}
+
+.shooters div{
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.322);
+}
+
+
+/** Conduccion **/
+.conduccion-h h3{
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.conduccion-h p{
+    text-align:center;
+    text-justify: auto;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 2rem;
+}
+
+.conduccion-h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (min-width: 768px) {
+   .conduccion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5rem;
+    justify-content:space-between;
+} 
+
+}
+
+.conduccion p{
+    text-align:center;
+    text-justify: auto;
+}
+
+.conduccion div{
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.322);
+}
+
+/** Deportes **/
+.deportes-h h3{
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.deportes-h p{
+    text-align:center;
+    text-justify: auto;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 2rem;
+}
+
+.deportes-h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media (min-width: 768px ) {
+    .deportes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10rem;
+    justify-content:space-between;
+}
+}
+
+.deportes p{
+    text-align:center;
+    text-justify: auto;
+}
+
+.deportes div{
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.322);
+}
+
+/** Mundo Abierto **/
+.mundoabierto-h h3{
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.mundoabierto-h p{
+    text-align:center;
+    text-justify: auto;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 2rem;
+}
+
+.mundoabierto-h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media (min-width: 768px) {
+    .mundoabierto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10rem;
+    justify-content:space-between;
+}
+}
+
+.mundoabierto p{
+    text-align:center;
+    text-justify: auto;
+}
+
+.mundoabierto div{
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.322);
+}
+
+/** Formulario **/
+.formulario{
+    background-color: gray;
+    width: min(60rem, 100%); /** utilizar el valor mas pequerño **/
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    color: var(--primario);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1 / 3;
+    }
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea{
+    height: 10rem;
+}
+
+.input-text{
+    width: 100%;
+    border:none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton{
+    margin-top: 10rem;
+    width: 100%;
+}
